@@ -1,14 +1,14 @@
-# trailMix
+# TrailMix
 
-trailMix is a trail-finding based web application built by a team of 5 web developers during a 48 hour hackathon. The project was originally completed utilizing JavaScript and jQuery, and was later ported over to ReactJS and Redux.
+TrailMix is a trail-finding web application created by a team of 5 developers for a 2-day hackathon. The project was originally completed utilizing JavaScript and jQuery, and then was later rebuilt using ReactJS and Redux.
 
 ## Usage
 
-Our application was created for any level of hiker to find a trail either nerby them or any location they choose.  Your next hike is just a few clocks away.  Sort by trail rating, length or difficulty to match your needs.  Get directions to the trail using Google Maps and make sure to select a date for your hike to get the weather in the area!
+This application was created for hikers to search for trails either near them (determined by Google Geolocation) or a specific location of their choosing.  Your next hike is just a few clicks away. The trails can be sorted by rating, length and difficulty to match your preferences.  Get directions and weather conditions as well, so your trip can be well prepared!
 
 ## Project
 
-View this project live [HERE](parkerrebensdorf.com/trailMix/)
+View this project live [HERE](http://trailMix.bylizhang.com)
 
 Or follow the instructions below to view it on your local machine.
 
@@ -16,7 +16,7 @@ Or follow the instructions below to view it on your local machine.
 
 > 1. Fork this repo
 > 2. Clone your forked copy of this repo
->    - `git clone https://github.com/caxpper/trailMix.git`
+>    - `git clone https://github.com/ByLiZhang/trailMix.git`
 > 3. Change directory into the newly cloned repo
 >    - `cd trailMix`
 > 4. Install dependencies 
@@ -27,11 +27,12 @@ Or follow the instructions below to view it on your local machine.
 
 ## Features
 
-- [x] Geolocation to find trails nearby
-- [x] Driving directions
-- [x] Trail sorting filters
-- [x] Localized forecast
-- [x] Design made for Desktop and Mobile use
+- [x] Determines user's current location or takes the location input by user
+- [x] Provides trail details 
+- [x] Sorting trails by various criteria
+- [x] Provides driving directions 
+- [x] Presents weather forecast
+- [x] Designd for Desktop and Mobile devices
 
 
 ## Technologies Used
@@ -50,6 +51,10 @@ Or follow the instructions below to view it on your local machine.
 
 [caxpper](https://github.com/caxpper) |
 [PDRX91](https://github.com/PDRX91) |
-[ByLiZhang](https://github.com/ByLiZhang) |
 [NolanEmerson](https://github.com/NolanEmerson) |
-[dnguyen793](https://github.com/dnguyen793) 
+[dnguyen793](https://github.com/dnguyen793) |
+[ByLiZhang](https://github.com/ByLiZhang) 
+
+## License
+This project is licensed under the MIT License © [Li Zhang](http://bylizhang.com)
+
