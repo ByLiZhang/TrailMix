@@ -317,6 +317,9 @@ p.label a{
     margin-right: 5%;
     font-size: 1.5em;
 }
+.sorterContainer label{
+    color: white;
+}
 
 .sorterContainer select{
     font-size: .9em;
