@@ -22,7 +22,7 @@ class Landing extends Component{
         let notValidMessage = '';
         if(this.props.match.path === '/notValid'){
             notValidMessage = <h3 className='notValid'>No location found. Please refine your search.</h3>
-        } else if(this.props.match.path === 'notResponding'){
+        } else if(this.props.match.path === '/notResponding'){
             notValidMessage = <h3 className='notValid'>Your search cannot be completed rigth now. Please try again later.</h3>
         }
 
@@ -31,9 +31,9 @@ class Landing extends Component{
                 <Logo logoClass="wholeLogoContainer"/>                
 
                 <div className="searchContainer">
-                    {notValidMessage}
                     <Search {...this.props} />     
                     <p>Enter a location to search for nearby trails or click <i className="fas fa-search"></i> to use current location</p>                   
+                    {notValidMessage}
                 </div>
 
                 <ResetGeolocationInst/>        

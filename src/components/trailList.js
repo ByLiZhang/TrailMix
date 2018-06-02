@@ -36,7 +36,7 @@ class TrailList extends Component {
                 if(this.state.loading){
                     this.props.history.push('/notResponding');
                 }
-            }, 7000);
+            }, 8000);
             this.props.getCoordinates(this.props.match.params.location,this.props);            
         }
     }
@@ -46,7 +46,7 @@ class TrailList extends Component {
             if(this.state.loading){
                 this.props.history.push('/notResponding');
             }
-        }, 7000); 
+        }, 8000); 
         this.props.getCoordinates(this.props.match.params.location,this.props); 
     }
     
