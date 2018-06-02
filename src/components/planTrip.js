@@ -46,6 +46,11 @@ class PlanTrip extends Component {
     }
 
     initDirection() {
+        setTimeout(() => {
+            if(this.state.loading){
+                this.props.history.push('/notResponding');
+            }
+        }, 8000);
         this.props.getDirections(this.props.match.params.lat, 
             this.props.match.params.long, this.props.map, this.props.match.params.location);
     }

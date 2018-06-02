@@ -32,12 +32,17 @@ class TrailList extends Component {
             // Asynchronously load the Google Maps script, passing in the callback reference
             this.loadJS(keys.google); 
         }else{
-           this.props.getCoordinates(this.props.match.params.location,this.props);            
+            this.initMap();            
         }
     }
     
-    initMap() { 
-        this.props.getCoordinates(this.props.match.params.location,this.props); 
+    initMap() {
+        setTimeout(() => {
+            if(this.state.loading){
+                this.props.history.push('/notResponding');
+            }
+        }, 8000); 
+        this.props.getCoordinates(this.props.match.params.location, this.props); 
     }
     
     loadJS(src) {
