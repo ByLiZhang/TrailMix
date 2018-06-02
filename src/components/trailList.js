@@ -32,12 +32,7 @@ class TrailList extends Component {
             // Asynchronously load the Google Maps script, passing in the callback reference
             this.loadJS(keys.google); 
         }else{
-            setTimeout(() => {
-                if(this.state.loading){
-                    this.props.history.push('/notResponding');
-                }
-            }, 8000);
-            this.props.getCoordinates(this.props.match.params.location,this.props);            
+            this.initMap();            
         }
     }
     
@@ -47,7 +42,7 @@ class TrailList extends Component {
                 this.props.history.push('/notResponding');
             }
         }, 8000); 
-        this.props.getCoordinates(this.props.match.params.location,this.props); 
+        this.props.getCoordinates(this.props.match.params.location, this.props); 
     }
     
     loadJS(src) {
